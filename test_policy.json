@@ -1,0 +1,26 @@
+{
+    "policy": {
+        "name": "test_policy",
+        "description": "HTTP Proxy test",
+        "template": {
+            "name": "POLICY_TEMPLATE_API_SECURITY"
+        },
+        "enforcementMode": "blocking",
+        "server-technologies": [
+            {
+                "serverTechnologyName": "Unix/Linux"
+            }
+        ],
+        "signature-settings": {
+            "signatureStaging": false
+        },
+        "policy-builder": {
+            "learnOnlyFromNonBotTraffic": false
+        },
+        "open-api-files": [
+            {
+            "link": "https://api.swaggerhub.com/apis/F5EMEASSA/API-Sentence/3.0.1"
+            }
+        ]
+    }
+}
